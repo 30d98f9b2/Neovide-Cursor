@@ -139,7 +139,7 @@ function activate(context) {
 			
 			// 询问是否要删除路径
 			const selection = await vscode.window.showInformationMessage(
-				`确定要删除生成的路径吗？\n将移除 ${neovideRelatedImports.length} 个neovide相关文件，保留 ${existingImports.length - neovideRelatedImports.length} 个其他插件文件`,
+				`确定要删除生成的路径吗？\n将移除 ${neovideRelatedImports.length} 个 neovide-cursor 相关路径，保留 ${existingImports.length - neovideRelatedImports.length} 个其他插件路径`,
 				'删除',
 				'取消'
 			);
