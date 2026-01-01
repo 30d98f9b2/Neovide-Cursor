@@ -1,6 +1,6 @@
 # 🌟 Neovide Cursor
 
-Neovide-like Cursor Animation Plugin
+A Neovide-like Cursor Animation Plugin for VSCode
 
 ## ✨ 特性 (Features)
 
