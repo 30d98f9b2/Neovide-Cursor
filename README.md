@@ -4,7 +4,7 @@
 Neovide-like Cursor Animation Plugin
 
 ## ✨ 特性 (Features)
----
+
 基础动画 | Basic Animation: 
 ![basicAnimation.gif](gifs/basicAnimation.gif)
 
@@ -18,7 +18,7 @@ Neovide-like Cursor Animation Plugin
 ![splitScreen.gif](gifs/splitScreen.gif)
 
 ## 📢 重要说明 (Important Notices)
----
+
 - 此插件会带来较为严重的**性能负担**与**电量消耗**，请酌情使用，不建议在您的设备**未连接电源**时开启
 - This plugin may cause significant **performance burden** and **power consumption**. Please use it discretionally; it is not recommended to enable it when your device is **NOT** connected to a power source.
 
@@ -29,7 +29,7 @@ Neovide-like Cursor Animation Plugin
 - The plugin is not yet fully polished and may have unexpected bugs (such as flickering, irregular deformation, etc.).
 
 ## 🛠️ 安装步骤 (Installation Steps)
----
+
 ### 方法一：通过 VSCode 市场安装 (推荐) | Method 1: Install via VSCode Marketplace (Recommended)
 
 1. 在 VSCode 中打开**扩展**面板 (`Ctrl+Shift+X`) | Open the **Extensions** panel in VSCode (`Ctrl+Shift+X`)
@@ -44,7 +44,7 @@ Neovide-like Cursor Animation Plugin
 4. 选择下载的 `.vsix` 文件 | Select the downloaded `.vsix` file
 
 ## 🤔 使用方法 (How to Use)
----
+
 ⚠️ 前置条件：已安装本插件和 **Custom CSS and JS Loader** |  ⚠️ Prerequisite: This plugin and **Custom CSS and JS Loader** have been installed
 
 1. 输入命令 "`Neovide Cursor: Generate Path`" 生成文件引入路径 | Type the command `Neovide Cursor: Generate Path` to generate the file import path
@@ -60,21 +60,21 @@ Neovide-like Cursor Animation Plugin
 4. 现在你可以看到效果了 | Now you can see the effect
 
 ## ⚙️ 配置选项 (Configurations)
----
+
 1. 输入命令 "`Neovide Cursor: Open User Configurations`" 打开插件文件 | Type the command "`Neovide Cursor: Open User Configurations`" to open the user configuration file
 2. 根据文件注释自行设置 | Set the configurations as needed according to the file comments
 
 ⚠️ 注意：修改文件的其他部分可能会导致无法预料的问题 | ⚠️ Note: Modifying the other parts of the file may cause unexpected issues.
 
 ## 🏎️ 性能优化建议 (Performance Optimization Tips)
----
+
 如果你遇到性能问题，可以尝试: | If you encounter performance issues, try the following:
 
 1. 增大 `cursorUpdatePollingRate` 的值 (降低扫描频率) | Increase `cursorUpdatePollingRate` (reduce the polling frequency)
 2. 关闭 `useShadow` (禁用辉光效果) | Disable `useShadow` (turn off the glow effect)
 
 ## ❓ 常见问题 (FAQ)
----
+
 ### Q: 安装后没有效果?
 
 A: 请确保：
@@ -126,11 +126,11 @@ A:
 4. Uninstall the Neovide Cursor plugin
 
 ## 📃 许可证 (License)
----
+
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## 🤝 鸣谢 (Credits)
----
+
 -  [Neovide](https://github.com/neovide/neovide) Editor
 - Juejin developer @LengineerC [我写了一个VSCode的仿Neovide光标动画](https://juejin.cn/post/7578917474659352627)
 - Also the project by @LengineerC [Neovide Cursor Effect for VS Code 🚀](https://github.com/LengineerC/vscode-neovide-cursor/tree/main)
