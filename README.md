@@ -4,16 +4,20 @@ A Neovide-like Cursor Animation Plugin for VSCode
 
 ## ✨ 特性 (Features)
 
-基础动画 | Basic Animation: 
+- 基础动画 | Basic Animation:
+
 ![basicAnimation.gif](https://raw.githubusercontent.com/30d98f9b2/Neovide-Cursor/refs/heads/main/gifs/basicAnimation.gif)
 
-多光标 | Multi-Cursor: 
+- 多光标 | Multi-Cursor:
+
 ![multiCurosr.gif](https://raw.githubusercontent.com/30d98f9b2/Neovide-Cursor/refs/heads/main/gifs/multiCursor.gif)
 
-跨文件 | Cross-File: 
+- 跨文件 | Cross-File:
+
 ![crossFile.gif](https://raw.githubusercontent.com/30d98f9b2/Neovide-Cursor/refs/heads/main/gifs/crossFile.gif)
 
-分屏 | Split-Screen: 
+- 分屏 | Split-Screen:
+
 ![splitScreen.gif](https://raw.githubusercontent.com/30d98f9b2/Neovide-Cursor/refs/heads/main/gifs/splitScreen.gif)
 
 ## 📢 重要说明 (Important Notices)
