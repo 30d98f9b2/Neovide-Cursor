@@ -2,7 +2,7 @@
 	"name": "neovide-cursor",
 	"displayName": "Neovide Cursor",
 	"description": "A Neovide-like Cursor Animation Plugin",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"publisher": "30d98f9b2",
 	"engines": {
 		"vscode": "^1.60.0"
@@ -64,3 +64,4 @@
 	"license": "MIT",
 	"icon": "icon.png"
 }
+
