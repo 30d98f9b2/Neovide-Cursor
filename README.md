@@ -1,7 +1,7 @@
 # 🌟 Neovide Cursor
 
-类 Neovide 光标动画插件
 Neovide-like Cursor Animation Plugin
+类 Neovide 光标动画插件
 
 ## ✨ 特性 (Features)
 
