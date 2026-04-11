@@ -32,6 +32,7 @@
 
 // --- 颜色和外观 (Color and Appearance) ---
 const tailColor = "#FFC0CB"; // 拖尾颜色 (十六进制) | 默认: "#FFC0CB"
+const cursorColor = tailColor; // 原生光标颜色 (十六进制) | 默认: tailColor
 const tailOpacity = 1; // 不透明度 (0-1) | 默认: 1
 
 // --- 阴影辉光 (Shadow Glow) ---
@@ -482,6 +483,9 @@ class GlobalCursorManager {
 		style.textContent = `
             .monaco-editor .cursor {
                 transition: none !important;
+                background-color: ${cursorColor} !important;
+                border-color: ${cursorColor} !important;
+                color: ${cursorColor} !important;
             }
             .cursor-trail {
                 opacity: 0 !important;
