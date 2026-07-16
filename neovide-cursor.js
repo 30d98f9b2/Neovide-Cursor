@@ -656,4 +656,15 @@ class GlobalCursorManager {
 }
 
 // 启动全局光标管理器
-new GlobalCursorManager();
+// 修复: 代码可能在 <head> 中执行，此时 document.body 还不存在
+// 需要等待 DOM 就绪后再初始化
+function initNeovideCursor() {
+    if (document.body) {
+        new GlobalCursorManager();
+    } else {
+        document.addEventListener('DOMContentLoaded', () => {
+            new GlobalCursorManager();
+        });
+    }
+}
+initNeovideCursor();
