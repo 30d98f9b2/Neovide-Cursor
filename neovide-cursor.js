@@ -346,9 +346,9 @@ const createNeovideCursor = ({ canvas }) => {
 					fromSource ||
 					(globalCursorState.lastX
 						? {
-								x: globalCursorState.lastX,
-								y: globalCursorState.lastY,
-						  }
+							x: globalCursorState.lastX,
+							y: globalCursorState.lastY,
+						}
 						: null);
 				if (src) {
 					const oldDim = {
@@ -547,9 +547,9 @@ class GlobalCursorManager {
 						r.top,
 						globalCursorState.lastX
 							? {
-									x: globalCursorState.lastX,
-									y: globalCursorState.lastY,
-							  }
+								x: globalCursorState.lastX,
+								y: globalCursorState.lastY,
+							}
 							: null
 					);
 					this.cursors.set(id, {
@@ -656,4 +656,21 @@ class GlobalCursorManager {
 }
 
 // 启动全局光标管理器
-new GlobalCursorManager();
+// 修复: 代码可能在 <head> 中执行，此时 document.body 还不存在
+// 需要等待 DOM 就绪后再初始化
+let neovideCursorManager = null;
+
+function initNeovideCursor() {
+	if (neovideCursorManager) return;
+	neovideCursorManager = new GlobalCursorManager();
+}
+
+if (document.readyState === 'loading') {
+	document.addEventListener(
+		'DOMContentLoaded',
+		initNeovideCursor,
+		{ once: true }
+	);
+} else {
+	initNeovideCursor();
+}
