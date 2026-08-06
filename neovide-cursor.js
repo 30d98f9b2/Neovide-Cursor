@@ -656,4 +656,15 @@ class GlobalCursorManager {
 }
 
 // 启动全局光标管理器
-new GlobalCursorManager();
+// 修复: 脚本由 Custom CSS and JS Loader 注入在 workbench.html 的 <head> 中,
+// 此时 document.body 尚为 null, 直接执行会在 init() 的
+// document.body.appendChild(this.canvas) 处抛 TypeError, 导致整个脚本失效。
+// 等待 DOM 就绪后再初始化, 兼容 <head> 注入场景。
+function startNeovideCursor() {
+  new GlobalCursorManager();
+}
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", startNeovideCursor);
+} else {
+  startNeovideCursor();
+}
