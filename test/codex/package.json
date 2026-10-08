@@ -1,0 +1,13 @@
+{
+  "name": "neovide-codex-browser-tests",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node run.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.64.0"
+  }
+}

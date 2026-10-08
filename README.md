@@ -20,6 +20,11 @@ A Neovide-like Cursor Animation Plugin for VSCode
 
 ![splitScreen.gif](https://raw.githubusercontent.com/30d98f9b2/Neovide-Cursor/refs/heads/main/gifs/splitScreen.gif)
 
+## Experimental Codex support
+
+An optional adapter adds Codex composer animations, IME support, and cross-panel
+transitions. See [installation, limitations, and tests](docs/codex-webview.md).
+
 ## 📢 重要说明 (Important Notices)
 
 - 此插件会带来较为严重的**性能负担**与**电量消耗**，请酌情使用，不建议在您的设备**未连接电源**时开启
